@@ -1,0 +1,102 @@
+/* ────────────────────────────────────────────────
+   theme.css — colors & contrast
+   ──────────────────────────────────────────────── */
+
+/* dark theme */
+:root,
+[data-theme="dark"] {
+  --bg:       #07102E;
+  --deep:     #050D22;
+  --surface:  #0E1B45;
+  --panel:    #162050;
+  --primary:  #4361EE;
+  --glow:     #7692FF;
+  --accent:   #ABD2FA;
+  --light:    #D6E6FF;
+  --white:    #ffffff;
+  --text:     #D6E6FF;
+  --text-dim: #7692FF;
+  --card-bg:  rgba(14,27,69,0.8);
+  --border:   rgba(118,146,255,0.25);
+  --input-bg: rgba(7,16,46,0.6);
+  --shadow:   rgba(0,0,0,0.5);
+  --nav-bg:   rgba(7,16,46,0.82);
+  --footer-c: rgba(118,146,255,0.35);
+  --tag-bg:   rgba(67,97,238,0.18);
+  --tag-c:    #7692FF;
+  --font-title: 'Orbitron', sans-serif;
+  --font-body:  'Rajdhani', sans-serif;
+  color-scheme: dark;
+}
+
+/* light theme */
+[data-theme="light"] {
+  --bg:       #EEF2FF;
+  --deep:     #DDE3FA;
+  --surface:  #FFFFFF;
+  --panel:    #F4F6FF;
+  --primary:  #4361EE;
+  --glow:     #4361EE;
+  --accent:   #1a2c8a;
+  --light:    #1a1f3a;
+  --white:    #111827;
+  --text:     #1a1f3a;
+  --text-dim: #4361EE;
+  --card-bg:  rgba(255,255,255,0.85);
+  --border:   rgba(67,97,238,0.3);
+  --input-bg: rgba(255,255,255,0.9);
+  --shadow:   rgba(67,97,238,0.15);
+  --nav-bg:   rgba(238,242,255,0.9);
+  --footer-c: #4361EE;
+  --tag-bg:   rgba(67,97,238,0.12);
+  --tag-c:    #4361EE;
+  color-scheme: light;
+}
+
+/* high contrast — dark */
+[data-contrast="high"] {
+  --bg:       #000000;
+  --deep:     #000000;
+  --surface:  #000000;
+  --panel:    #000000;
+  --primary:  #4d8bff;
+  --glow:     #7fb0ff;
+  --accent:   #ffffff;
+  --light:    #ffffff;
+  --white:    #ffffff;
+  --text:     #ffffff;
+  --text-dim: #e0e0e0;
+  --card-bg:  #000000;
+  --border:   #ffffff;
+  --input-bg: #000000;
+  --shadow:   rgba(0,0,0,0.9);
+  --nav-bg:   #000000;
+  --footer-c: #ffffff;
+  --tag-bg:   #000000;
+  --tag-c:    #ffffff;
+}
+
+/* high contrast — light */
+[data-contrast="high"][data-theme="light"] {
+  --bg:       #ffffff;
+  --deep:     #ffffff;
+  --surface:  #ffffff;
+  --panel:    #ffffff;
+  --accent:   #000000;
+  --light:    #000000;
+  --white:    #000000;
+  --text:     #000000;
+  --text-dim: #222222;
+  --card-bg:  #ffffff;
+  --border:   #000000;
+  --input-bg: #ffffff;
+  --nav-bg:   #ffffff;
+  --footer-c: #000000;
+  --tag-bg:   #ffffff;
+  --tag-c:    #000000;
+}
+
+/* font size scale */
+html[data-fontsize="sm"] { font-size: 14px; }
+html[data-fontsize="md"] { font-size: 16px; }
+html[data-fontsize="lg"] { font-size: 18px; }

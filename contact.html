@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Venice Iena Castro</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/window.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- header -->
+<header>
+  <nav class="nav">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="contact.html" class="nav-btn">Contact</a>
+  </nav>
+  <button id="settings-toggle" class="settings-btn" aria-label="Settings" title="Settings">⚙️</button>
+  <div class="scroll-progress"></div>
+</header>
+
+<!-- settings -->
+<div id="settings-panel" class="settings-panel">
+  <div class="settings-row">
+    <span class="settings-label">Dark Mode</span>
+    <label class="switch">
+      <input type="checkbox" id="dark-toggle">
+      <span class="switch-track"><span class="switch-thumb"></span></span>
+    </label>
+  </div>
+  <div class="settings-row">
+    <span class="settings-label">Font Size</span>
+    <div class="font-controls">
+      <button id="font-dec" class="font-btn" type="button">A−</button>
+      <button id="font-inc" class="font-btn" type="button">A+</button>
+    </div>
+  </div>
+  <div class="settings-row">
+    <span class="settings-label">High Contrast</span>
+    <label class="switch">
+      <input type="checkbox" id="contrast-toggle">
+      <span class="switch-track"><span class="switch-thumb"></span></span>
+    </label>
+  </div>
+</div>
+
+<!-- contact -->
+<section id="contact" class="animate-section">
+  <p class="section-label">// Contact</p>
+  <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+  <div class="contact-layout">
+
+    <!-- tickets -->
+    <div class="contact-cards">
+      <p class="contact-intro">Feel free to reach out through any of my social media or send a message directly.</p>
+      <div class="tickets-grid">
+        <a class="ticket ticket-yt" href="https://www.youtube.com/@yenachii" target="_blank">
+          <div class="ticket-bg"></div>
+          <div class="ticket-notch-left"></div><div class="ticket-notch-right"></div>
+          <div class="ticket-dashes"></div>
+          <div class="ticket-content">
+            <div class="ticket-icon">▶️</div>
+            <div class="ticket-info">
+              <div class="ticket-platform">YouTube</div>
+              <div class="ticket-handle">@yenachii</div>
+            </div>
+            <div class="ticket-arrow">›</div>
+          </div>
+        </a>
+        <a class="ticket ticket-ig" href="https://www.instagram.com/xxyenachi" target="_blank">
+          <div class="ticket-bg"></div>
+          <div class="ticket-notch-left"></div><div class="ticket-notch-right"></div>
+          <div class="ticket-dashes"></div>
+          <div class="ticket-content">
+            <div class="ticket-icon">📸</div>
+            <div class="ticket-info">
+              <div class="ticket-platform">Instagram</div>
+              <div class="ticket-handle">@xxyenachi</div>
+            </div>
+            <div class="ticket-arrow">›</div>
+          </div>
+        </a>
+        <a class="ticket ticket-fb" href="" target="_blank">
+          <div class="ticket-bg"></div>
+          <div class="ticket-notch-left"></div><div class="ticket-notch-right"></div>
+          <div class="ticket-dashes"></div>
+          <div class="ticket-content">
+            <div class="ticket-icon">🌐</div>
+            <div class="ticket-info">
+              <div class="ticket-platform">Facebook</div>
+              <div class="ticket-handle">@xxYenachi</div>
+            </div>
+            <div class="ticket-arrow">›</div>
+          </div>
+        </a>
+        <a class="ticket ticket-ca" href="" target="_blank">
+          <div class="ticket-bg"></div>
+          <div class="ticket-notch-left"></div><div class="ticket-notch-right"></div>
+          <div class="ticket-dashes"></div>
+          <div class="ticket-content">
+            <div class="ticket-icon">🟢</div>
+            <div class="ticket-info">
+              <div class="ticket-platform">Canvas</div>
+              <div class="ticket-handle">vacastro@fit.edu.ph</div>
+            </div>
+            <div class="ticket-arrow">›</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- form -->
+    <div class="contact-form-wrap">
+      <div class="aero-window form-window">
+        <div class="aero-titlebar">
+          <div class="aero-dot aero-dot-red"></div>
+          <div class="aero-dot aero-dot-amber"></div>
+          <div class="aero-dot aero-dot-green"></div>
+          <span class="aero-title-text">send_message.exe</span>
+        </div>
+        <div class="aero-body">
+          <div id="form-success" class="form-success" hidden>
+            <span>✅</span>
+            <p>Message sent! I'll get back to you soon.</p>
+            <button id="form-reset" class="btn-outline" style="margin-top:12px;">Send another</button>
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="f-name">Name *</label>
+              <input type="text" id="f-name" name="name" placeholder="Your full name" autocomplete="name">
+              <span class="form-error" id="err-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email *</label>
+              <input type="email" id="f-email" name="email" placeholder="you@example.com" autocomplete="email">
+              <span class="form-error" id="err-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="f-subject">Subject</label>
+              <input type="text" id="f-subject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label for="f-message">Message *</label>
+              <textarea id="f-message" name="message" rows="5" placeholder="Write your message here…"></textarea>
+              <span class="form-error" id="err-message"></span>
+            </div>
+            <div class="form-footer">
+              <p class="form-saved-note" id="saved-note">💾 Draft auto-saved</p>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <p>© 2026 Venice Iena Castro &nbsp;·&nbsp; Finals</p>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/script.js"></script>
+<script src="js/feature.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venice Iena Castro — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/window.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- header -->
+<header>
+  <nav class="nav">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="contact.html" class="nav-btn">Contact</a>
+  </nav>
+  <button id="settings-toggle" class="settings-btn" aria-label="Settings" title="Settings">⚙️</button>
+  <div class="scroll-progress"></div>
+</header>
+
+<!-- settings -->
+<div id="settings-panel" class="settings-panel">
+  <div class="settings-row">
+    <span class="settings-label">Dark Mode</span>
+    <label class="switch">
+      <input type="checkbox" id="dark-toggle">
+      <span class="switch-track"><span class="switch-thumb"></span></span>
+    </label>
+  </div>
+  <div class="settings-row">
+    <span class="settings-label">Font Size</span>
+    <div class="font-controls">
+      <button id="font-dec" class="font-btn" type="button">A−</button>
+      <button id="font-inc" class="font-btn" type="button">A+</button>
+    </div>
+  </div>
+  <div class="settings-row">
+    <span class="settings-label">High Contrast</span>
+    <label class="switch">
+      <input type="checkbox" id="contrast-toggle">
+      <span class="switch-track"><span class="switch-thumb"></span></span>
+    </label>
+  </div>
+</div>
+
+<!-- hero -->
+<section id="home" class="hero">
+  <div class="hero-scanlines"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-img-wrap">
+    <img src="assets/images/image.png" class="hero-img" alt="Venice Castro" onerror="this.style.display='none'">
+  </div>
+  <div class="hero-content animate-fade-in">
+    <p class="hero-label"> Welcome to my portfolio</p>
+    <h1 class="hero-name">Venice Iena<br><span class="hero-name-accent">Castro</span></h1>
+    <p class="hero-sub">Bachelor in Science &amp; Information Technology Specialized in Cybersecurity</p>
+    <p class="hero-role" id="dynamic-role">Student Developer</p>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <p>© 2026 Venice Iena Castro &nbsp;·&nbsp; Finals</p>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/script.js"></script>
+<script src="js/feature.js"></script>
+</body>
+</html>

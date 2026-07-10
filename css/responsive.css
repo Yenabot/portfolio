@@ -1,0 +1,24 @@
+/* ────────────────────────────────────────────────
+   responsive.css — media queries
+   ──────────────────────────────────────────────── */
+
+@media (max-width:900px) {
+  header { padding: 12px 16px; }
+  .nav { gap: 8px; }
+  .nav-btn { padding: 8px 14px; }
+  .settings-panel { right: 12px; left: 12px; width: auto; }
+  .hero { flex-direction:column; text-align:center; padding:100px 32px 60px; align-items:center; }
+  .hero-img-wrap { order:-1; }
+  .skills-container { grid-template-columns:1fr; }
+  .about-grid { flex-direction:column; align-items:center; }
+  .portrait-window { flex:none; width:100%; max-width:320px; }
+  section, .page-hero { padding: 60px 24px; }
+}
+
+@media (max-width:600px) {
+  .projects-grid { grid-template-columns:1fr; }
+  .tickets-grid  { grid-template-columns:1fr; }
+  .soft-skills-grid { grid-template-columns:1fr; }
+  .hero-name { font-size: 1.75rem; }
+  .nav-btn { font-size: 0.625rem; padding: 7px 12px; }
+}
